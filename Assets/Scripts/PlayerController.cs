@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rigidbody2d.MovePosition(rigidbody2d.position + (InputVector * Speed * Time.fixedDeltaTime));
+        //rigidbody2d.MovePosition(rigidbody2d.position + (InputVector * Speed * Time.fixedDeltaTime));
+        rigidbody2d.velocity = InputVector * Speed;
     }
 }
