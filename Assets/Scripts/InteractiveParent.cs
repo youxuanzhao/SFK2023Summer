@@ -10,7 +10,8 @@ public class InteractiveParent : MonoBehaviour
     public Animator animator;
     
     private bool tooltipVisible;
-    private bool use = false;
+    private bool inRange = false;
+    public bool use = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,14 @@ public class InteractiveParent : MonoBehaviour
     void Update()
     {
         tooltip.SetActive(tooltipVisible);
+        if (Input.GetKeyDown(KeyCode.E) && inRange)
+        {
+            use = true;
+            if(animator != null) {
+                animator.SetTrigger("m1trigger");
+            }
+            
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +38,7 @@ public class InteractiveParent : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             tooltipVisible = true;
+            inRange = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -36,14 +46,8 @@ public class InteractiveParent : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             tooltipVisible = false;
+            inRange = false;
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            use = true;
-            animator.SetBool("use", use);
-        }
-    }
+   
 }
