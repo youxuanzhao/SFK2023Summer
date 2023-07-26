@@ -41,6 +41,12 @@ TagManager:
   - name: Tile
     uniqueID: 3781942393
     locked: 0
+  - name: room
+    uniqueID: 906428389
+    locked: 0
+  - name: medium
+    uniqueID: 158674745
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
