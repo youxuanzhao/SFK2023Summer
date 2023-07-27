@@ -10,7 +10,7 @@ public class InteractiveParent : MonoBehaviour
     public Animator animator;
     
     private bool tooltipVisible;
-    private bool inRange = false;
+    public bool inRange = false;
     public bool use = false;
 
     // Start is called before the first frame update
