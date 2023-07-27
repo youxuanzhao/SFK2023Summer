@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rigidbody2d;
     public Animator animator;
     private Vector2 InputVector;
+    public bool HasNecklace = false;
     private bool Front = true;
     // Start is called before the first frame update
 
