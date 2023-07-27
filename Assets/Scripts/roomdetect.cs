@@ -8,6 +8,7 @@ public class roomdetect : MonoBehaviour
     // Start is called before the first frame update
     public GameObject map;
     public GameObject decorations;
+    public SpriteRenderer player;
     public Light2D maplight;
     public Light2D roomlight;
     private bool inRoom;
@@ -40,11 +41,13 @@ public class roomdetect : MonoBehaviour
     {
         if(inRoom == true && maplight.intensity>=0 && roomlight.intensity<=1)
         {
+            player.sortingLayerName = "room";
             maplight.intensity -= Time.fixedDeltaTime * dimSpeed;
             roomlight.intensity += Time.fixedDeltaTime * dimSpeed;
         }
         else if(inRoom == false && roomlight.intensity >= 0 && maplight.intensity <= 1)
         {
+            player.sortingLayerName = "Default";
             maplight.intensity += Time.fixedDeltaTime * dimSpeed;
             roomlight.intensity -= Time.fixedDeltaTime * dimSpeed;
         }
