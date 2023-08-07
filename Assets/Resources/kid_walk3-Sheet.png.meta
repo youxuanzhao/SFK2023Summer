@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kid_walk-Sheet_0
+      name: kid_walk3-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 4
+        y: 1
+        width: 12
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f5b034f8872341228852c85c668b6f0
-      internalID: 905653920
+      spriteID: d710b7e3a158246b1bb02366b21952fa
+      internalID: 1655396597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kid_walk-Sheet_1
+      name: kid_walk3-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
+        x: 24
+        y: 2
+        width: 12
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -158,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ac313f230f94636857d7fcb994482e
-      internalID: -97642077
+      spriteID: 3b942c12fb74f47bba0de8f102d6bc66
+      internalID: -611931417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kid_walk-Sheet_2
+      name: kid_walk3-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
+        x: 45
+        y: 2
+        width: 10
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -179,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a73f62c3a0c4e56a85ff6539db4a78
-      internalID: 84241334
+      spriteID: 703eb1db17e694e758f349c2cb777aa5
+      internalID: -1816409401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kid_walk-Sheet_3
+      name: kid_walk3-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
+        x: 65
+        y: 2
+        width: 10
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e290b429956cd4203b718e5947f1ea78
-      internalID: -571038396
+      spriteID: e1d4ffa7156f34ae1a2d230d7a29b7ba
+      internalID: -1982655515
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kid_walk-Sheet_0: 905653920
-      kid_walk-Sheet_1: -97642077
-      kid_walk-Sheet_2: 84241334
-      kid_walk-Sheet_3: -571038396
+      kid_walk3-Sheet_0: 1655396597
+      kid_walk3-Sheet_1: -611931417
+      kid_walk3-Sheet_2: -1816409401
+      kid_walk3-Sheet_3: -1982655515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
