@@ -6,20 +6,32 @@ public class l3playercontrol : MonoBehaviour
 {
     // Start is called before the first frame update
     public InteractiveParent ip;
+    public InteractiveParent ip2;
     public GameObject lt;
     public PlayerController pc;
 
+    public SpriteRenderer sr;
     // Update is called once per frame
     void Update()
     {
-        if (ip.use)
+
+        if (ip.use && !ip2.use)
         {
             lt.SetActive(true);
         }
-        if(!(pc.Front) && lt.active)
+        if (ip.use && ip2.use)
+        {
+            lt.SetActive(false);
+        }
+
+        if (!(pc.Front) && lt.active)
         {
             lt.transform.localScale.Set(-1, 1, 1);
+            sr.sortingOrder = 1;
         }
-        lt.transform.position.Set(pc.gameObject.transform.position.x, pc.gameObject.transform.position.y, pc.gameObject.transform.position.z+1);
+        else
+        {
+            sr.sortingOrder = 2;
+        }
     }
 }
