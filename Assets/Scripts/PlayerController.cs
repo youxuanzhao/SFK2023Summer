@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Vector2 InputVector;
     public bool HasNecklace = false;
-    private bool Front = true;
+    public bool Front = true;
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody2d.gravityScale = 0;
         rigidbody2d.angularDrag = 0;
+        Application.targetFrameRate = 120;
         
     }
     void Update()
